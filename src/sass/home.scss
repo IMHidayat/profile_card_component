@@ -1,0 +1,32 @@
+main {
+  @apply min-h-screen;
+  @apply bg-primary-color;
+  @apply bg-no-repeat;
+  background-image: url("../assets/bg-pattern-bottom.svg"), url("../assets/bg-pattern-top.svg");
+  background-position: bottom -550px right -750px, top -550px left -750px;
+  @media (min-width: 768px) {
+    // background-position: bottom -150px right -750px, top -550px left -750px;
+  }
+
+  .CARD_PROFILE {
+    @apply overflow-hidden;
+    @apply rounded-xl;
+    @apply bg-base-100;
+    > .card-header {
+      > div:first-child {
+        @apply relative;
+        @apply h-[140px];
+        background-image: url("../assets/bg-pattern-card.svg");
+        > div {
+          @apply absolute;
+          @apply w-24;
+          @apply h-24;
+          @apply top-[65%];
+          @apply left-[50%];
+          @apply translate-x-[-50%];
+          @apply ring-base-100;
+        }
+      }
+    }
+  }
+}
