@@ -9,15 +9,15 @@ main {
   }
 
   .CARD_PROFILE {
-    @apply overflow-hidden;
-    @apply rounded-xl;
+    @apply md:w-[350px] m-auto;
+    @apply overflow-hidden rounded-xl;
     @apply bg-base-100;
-    > .card-header {
-      > div:first-child {
+    .card-header {
+      .avatar {
         @apply relative;
         @apply h-[140px];
         background-image: url("../assets/bg-pattern-card.svg");
-        > div {
+        div {
           @apply absolute;
           @apply w-24;
           @apply h-24;
