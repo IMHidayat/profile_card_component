@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <main className="grid p-5 items-center">
       <article>
-        <section className="CARD_PROFILE card shadow-2xl">
+        <section className="CARD_PROFILE card ">
           <div className="card-header">
-            <div className="avatar flex mb-3">
+            <div className="avatar mb-3">
               <div className="rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
                 <img src={victorImage} alt="Profile Picture" width={10} height={10} />
               </div>
@@ -21,7 +21,7 @@ export default function Home() {
             </div>
           </div>
           <hr />
-          <div className="card-body p-6 px-7 grid grid-cols-3">
+          <div className="card-body grid grid-cols-3 py-6 px-7 ">
             <div className="grid justify-items-center">
               <h2 className="font-bold text-lg tracking-wide">80K</h2>
               <p className="font-light text-[.6rem] tracking-[.1rem]">Followers</p>

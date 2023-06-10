@@ -4,26 +4,20 @@ main {
   @apply bg-no-repeat;
   background-image: url("../assets/bg-pattern-bottom.svg"), url("../assets/bg-pattern-top.svg");
   background-position: bottom -550px right -750px, top -550px left -750px;
-  @media (min-width: 768px) {
-    // background-position: bottom -150px right -750px, top -550px left -750px;
-  }
 
   .CARD_PROFILE {
-    @apply md:w-[350px] m-auto;
-    @apply overflow-hidden rounded-xl;
+    @apply m-auto md:w-[350px];
+    @apply shadow-2xl overflow-hidden rounded-xl;
     @apply bg-base-100;
     .card-header {
       .avatar {
+        @apply flex;
         @apply relative;
         @apply h-[140px];
         background-image: url("../assets/bg-pattern-card.svg");
         div {
           @apply absolute;
-          @apply w-24;
-          @apply h-24;
-          @apply top-[65%];
-          @apply left-[50%];
-          @apply translate-x-[-50%];
+          @apply w-24 h-24 top-[65%] left-[50%] translate-x-[-50%];
           @apply ring-base-100;
         }
       }
