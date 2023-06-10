@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="grid p-5 items-center">
       <article>
-        <section className="CARD_PROFILE card">
+        <section className="CARD_PROFILE card shadow-2xl">
           <div className="card-header">
             <div className="avatar flex mb-3">
               <div className="rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
@@ -21,18 +21,18 @@ export default function Home() {
             </div>
           </div>
           <hr />
-          <div className="card-body p-5 grid grid-cols-3">
+          <div className="card-body p-6 px-7 grid grid-cols-3">
             <div className="grid justify-items-center">
               <h2 className="font-bold text-lg tracking-wide">80K</h2>
-              <p className="font-light text-xs tracking-widest">Followers</p>
+              <p className="font-light text-[.6rem] tracking-[.1rem]">Followers</p>
             </div>
             <div className="grid justify-items-center">
               <h2 className="font-bold text-lg tracking-wide">803K</h2>
-              <p className="font-light text-xs tracking-widest">Likes</p>
+              <p className="font-light text-[.6rem] tracking-[.1rem]">Likes</p>
             </div>
             <div className="grid justify-items-center">
               <h2 className="font-bold text-lg tracking-wide">1.4K</h2>
-              <p className="font-light text-xs tracking-widest">Photos</p>
+              <p className="font-light text-[.6rem] tracking-[.1rem]">Photos</p>
             </div>
           </div>
         </section>
