@@ -4,9 +4,15 @@ main {
   @apply bg-no-repeat;
   background-image: url("../assets/bg-pattern-bottom.svg"), url("../assets/bg-pattern-top.svg");
   background-position: bottom -550px right -750px, top -550px left -750px;
+  @media (min-width: 1024px) {
+    background-position: bottom -250px right -450px, top -550px left -750px;
+  }
+  @media (min-width: 1280px) {
+    background-position: bottom -550px right -0px, top -450px left -0px;
+  }
 
   .CARD_PROFILE {
-    @apply m-auto md:w-[350px];
+    @apply m-auto max-w-[350px];
     @apply shadow-2xl overflow-hidden rounded-xl;
     @apply bg-base-100;
     .card-header {
