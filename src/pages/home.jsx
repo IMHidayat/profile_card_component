@@ -4,35 +4,35 @@ import victorImage from "../assets/image-victor.jpg";
 
 export default function Home() {
   return (
-    <main className="grid p-5 items-center">
+    <main className="grid p-5">
       <article>
-        <section className="CARD_PROFILE card ">
+        <section className="card m-auto">
           <div className="card-header">
-            <div className="avatar mb-3">
-              <div className="rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
+            <div className="avatar flex mb-3">
+              <div>
                 <img src={victorImage} alt="Profile Picture" width={10} height={10} />
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center h-[130px]">
-              <p className="mt-10 mb-1 text-lg font-bold">
-                Victor Crest <span className="font-light ms-1">26</span>
+            <div className="profile-name-container flex">
+              <p className="mt-10 mb-1">
+                Victor Crest <span className=" ms-1">26</span>
               </p>
-              <p className="font-light text-sm">London</p>
+              <p>London</p>
             </div>
           </div>
           <hr />
-          <div className="card-body grid grid-cols-3 py-6 px-7 ">
-            <div className="grid justify-items-center">
-              <h2 className="font-bold text-lg tracking-wide">80K</h2>
-              <p className="font-light text-[.6rem] tracking-[.1rem]">Followers</p>
+          <div className="card-body grid py-6 px-7 ">
+            <div className="grid">
+              <h2>80K</h2>
+              <p>Followers</p>
             </div>
-            <div className="grid justify-items-center">
-              <h2 className="font-bold text-lg tracking-wide">803K</h2>
-              <p className="font-light text-[.6rem] tracking-[.1rem]">Likes</p>
+            <div className="grid">
+              <h2>803K</h2>
+              <p>Likes</p>
             </div>
-            <div className="grid justify-items-center">
-              <h2 className="font-bold text-lg tracking-wide">1.4K</h2>
-              <p className="font-light text-[.6rem] tracking-[.1rem]">Photos</p>
+            <div className="grid">
+              <h2>1.4K</h2>
+              <p>Photos</p>
             </div>
           </div>
         </section>
