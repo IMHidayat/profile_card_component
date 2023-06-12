@@ -2,10 +2,8 @@ main {
   @apply items-center;
   @apply min-h-screen;
   @apply bg-no-repeat bg-primary;
-  @apply bg-[url('../assets/bg-pattern-bottom.svg'),url('../assets/bg-pattern-top.svg')];
-  @apply bg-[position:bottom_-550px_right_-750px,_top_-550px_left_-750px];
-  @apply md:bg-[position:bottom_-450px_right_-550px,_top_-450px_left_-550px];
-  @apply xl:bg-[position:bottom_-600px_right_-200px,_top_-500px_left_-250px];
+  @apply bg-[url('../assets/bg-pattern-top.svg'),url('../assets/bg-pattern-bottom.svg')];
+  @apply bg-[position:right_53vw_bottom_35vh,left_48vw_top_52vh];
   .card {
     @apply max-w-[350px];
     @apply shadow-2xl overflow-hidden rounded-xl;
